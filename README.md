@@ -15,6 +15,12 @@ The following commands will be useful for vim users:
     set fileencoding=utf-8
     set encoding=utf-8
 
+    Massive convertion of files using utf-8:
+        vim +"argdo se nobomb | se fileencoding=utf-8 | w" *.md
+
+    Reload openned file with utf-8 charset (inside vim):
+        :e ++enc=utf-8
+
 ## Usage
 
     pygendocs opscard <mdfiles>...
